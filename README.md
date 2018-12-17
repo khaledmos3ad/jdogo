@@ -29,9 +29,10 @@ You can change the delimeters in the next version it will be very flexible so th
 
 ** Generation and Parsing is So simple with 2 Lines you can save a lot of efforts 
 
-** Example 
-JDOCGenerator generator = new JDOCGenerator(Customer.class);  // create a Doc generator from type Customer 
-String docCode = generator.generateObject(customer);  // It will generate for now A String of the generated Doc Code
+** Example: 
+
+>> JDOCGenerator generator = new JDOCGenerator(Customer.class);  // create a Doc generator from type Customer 
+>> String docCode = generator.generateObject(customer);  // It will generate for now A String of the generated Doc Code
 
 All is Done now with the above 2 Lines of code , you can generate a big tree of any wanted object with anydepth to be sent over network. 
 
@@ -39,16 +40,16 @@ All is Done now with the above 2 Lines of code , you can generate a big tree of 
 String jdocListCode = generator.generateObjectList(customers);
 
 ** Options: 
-generator.excludeObject("Location"); // You can configure the Generator to exclude the Mapping of the Location Object in the Customer Object Tree.    
-generator.excludeFieldsFromObject("Product", "name", "id"); You can also exclude any number of fields within any Object you want. 
+>> generator.excludeObject("Location"); // You can configure the Generator to exclude the Mapping of the Location Object in the Customer Object Tree.    
+>> generator.excludeFieldsFromObject("Product", "name", "id"); You can also exclude any number of fields within any Object you want. 
 
 *** Now it is the Time to parse the sent List of Object in the receiver like that 
-JDOCParser parser = new JDOCParser();
-List<Customer> customerList= (List<Customer>) parser.getObjectList(Customer.class, jdocListCode);
+>> JDOCParser parser = new JDOCParser();
+>> List<Customer> customerList= (List<Customer>) parser.getObjectList(Customer.class, jdocListCode);
   
 Now you have a parsed List of Customer List with only these 2 Lines, No Dtos , No Mappers, Validations will be implemeted in the next version and encryption also will be applied.
 
 The Code is still under Modification and testing and Modulation.. Alot of features will be provided in Version 2. 
 
-Thanks for reading this 
+Thanks for reading my Document 
 
