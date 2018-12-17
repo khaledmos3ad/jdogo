@@ -61,5 +61,9 @@ Now you have a parsed List of Customer List with only these 2 Lines, No Dtos , N
 
 The Code is still under Modification and testing and Modulation.. Alot of features will be provided in Version 2. 
 
-Thanks for reading my Document 
+NOTE: This Version include flat Mapping only .. List, Set, Maps still not added to parsers but it will be included in the next Version
+
+Thanks for reading my Document .. feel free to participate me to build a strong API. 
+
+My Contact: engkhaledmos3ad@gmail.com
 
