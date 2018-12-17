@@ -36,19 +36,20 @@ You can change the delimeters in the next version it will be very flexible so th
 
 ** Example: 
 
->> {
-    JDOCGenerator generator = new JDOCGenerator(Customer.class);  // create a Doc generator from type Customer 
-     String docCode = generator.generateObject(customer);  // It will generate for now A String of the generated Doc Code
-   }  
+>> JDOCGenerator generator = new JDOCGenerator(Customer.class);  // create a Doc generator from type Customer 
+>> String docCode = generator.generateObject(customer);  // It will generate for now A String of the generated Doc Code  
 
 All is Done now with the above 2 Lines of code , you can generate a big tree of any wanted object with anydepth to be sent over network. 
 
 ** To generate List of Objects 
-{ String jdocListCode = generator.generateObjectList(customers); }
+>> String jdocListCode = generator.generateObjectList(customers);
 
 ** Options: 
->> generator.excludeObject("Location"); // You can configure the Generator to exclude the Mapping of the Location Object in the Customer Object Tree.    
->> generator.excludeFieldsFromObject("Product", "name", "id"); //You can also exclude any number of fields within any Object you want. 
+// You can configure the Generator to exclude the Mapping of the Location Object in the Customer Object Tree.    
+>> generator.excludeObject("Location"); 
+
+//You can also exclude any number of fields within any Object you want. 
+>> generator.excludeFieldsFromObject("Product", "name", "id"); 
 
 *** Now it is the Time to parse the sent List of Object in the receiver like that 
 >> JDOCParser parser = new JDOCParser();
