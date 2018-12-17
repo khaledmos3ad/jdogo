@@ -13,7 +13,9 @@ JDogo define a new request Structure which I called it as DOC stands for "Detail
 DOC Exampe: 
 >> DOC {
     "Header":"id|name|activated|#product<id!name!quantity!#stock<id!label!#location<id!locationName!opened>>>",
+    
     "Data":["1|Khaled|true|#<1!Car!10!#<10!Stock 1!#<10!Nasr City!true>>>","2|Mahmoud|true|#<1!Car!10!#<10!Stock 1!#<10!Nasr City!true>>>"],
+    
     "Status":"200|Ok"}
   
 * As shown below the DOC divided into 3 Major Parts (Header ,Data,Status).
