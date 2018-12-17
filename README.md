@@ -52,7 +52,9 @@ All is Done now with the above 2 Lines of code , you can generate a big tree of 
 >> generator.excludeFieldsFromObject("Product", "name", "id"); 
 
 *** Now it is the Time to parse the sent List of Object in the receiver like that 
+
 >> JDOCParser parser = new JDOCParser();
+
 >> List<Customer> customerList= (List<Customer>) parser.getObjectList(Customer.class, jdocListCode);
   
 Now you have a parsed List of Customer List with only these 2 Lines, No Dtos , No Mappers, Validations will be implemeted in the next version and encryption also will be applied.
